@@ -1,0 +1,64 @@
+#cabecalho {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    background-color: rgb(173, 216, 230);
+    margin-top: 10px;
+}
+
+#grid_container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#coluna1 {
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#coluna2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#coluna3 {
+    text-align: center;
+}
+
+#principal {
+    width: 200px;
+}
+
+aside {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+
+/*ABAIXO � CRIADA UMA REGRA PARA UM LAYOUT RESPONSIVO. EM RESOLU��ES ABAIXO DE 1000px o conte�do ser� exibido em uma �nica coluna */
+
+@media screen and (max-width: 1000px) {
+    #grid_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
