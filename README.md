@@ -7,3 +7,4 @@ Repositório criado para as aulas da disciplina optativa Desenvolvimento Web Ava
   - CSS;
   - JavaScript;
   - Bootstrap;
+  - Arquitetura MVC (Atividade_01)
