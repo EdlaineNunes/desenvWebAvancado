@@ -16,9 +16,11 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="https://www.ifnmg.edu.br/cursos-janu1/cursos-superiores/429-portal/januaria/januaria-cursos-superiores/bacharelado-em-sistemas-de-informacao/17728-bacharelado-em-sistemas-de-informacao">BSI
-            - IFNMG</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <a class="navbar-brand"
+            href="https://www.ifnmg.edu.br/cursos-janu1/cursos-superiores/429-portal/januaria/januaria-cursos-superiores/bacharelado-em-sistemas-de-informacao/17728-bacharelado-em-sistemas-de-informacao"
+            onclick=" redirecionar() ">BSI - IFNMG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -32,20 +34,22 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Desenvolvimento Web
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" onclick=" location.href='/html/'">HTML</a>
                         <a class="dropdown-item" onclick=" location.href='/css/'">CSS </a>
                         <a class="dropdown-item" onclick=" location.href='/javascript/'">Javascript</a>
-                        <a class="dropdown-item" onclick=" location.href='/frontend/'">Frameworks Frontend <span class="sr-only">(página atual)</span></a>
+                        <a class="dropdown-item" onclick=" location.href='/frontend/'">Frameworks Frontend <span
+                                class="sr-only">(página atual)</span></a>
                         <a class="dropdown-item" onclick=" location.href='/backend/'">Frameworks Backend </a>
                     </div>
                 </li>
 
             </ul>
-            <button type="button" class="btn btn-outline-dark"> <a
+            <button type="button" class="btn btn-outline-dark"> <a onclick=" redirecionar() "
                     href="https://getbootstrap.com/docs/5.0/getting-started/download/"
                     style="text-decoration: none;">Baixar o Bootstrap</a> </button>
         </div>
@@ -55,72 +59,79 @@
     <div class="jumbotron">
 
         <div>
-            <img src="{% static 'images/sistemas_info.png' %}" alt="Sistemas de Informação" class="img-center" >
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Sistemas de Informação" class="img-center">
         </div>
         <h1 class="display-4">Frameworks Frontend</h1>
         <p class="lead">Informações gerais</p>
         <hr class="my-4">
         <h2>O que é um "Framework Frontend"?</h2>
         <p>
-            Framework é, de forma básica, um facilitador. Ele traz diversas soluções já pré-definidas, que descomplicam o trabalho dos profissionais no desenvolvimento de aplicativos e outros projetos digitais. Afinal, a atuação de um programador pode ter muito de
-            criatividade, mas também traz aspectos mecânicos, de repetição de tarefas, que seriam maçantes sem a possibilidade de automatização. Como os frameworks representam um conjunto de códigos prontos, que podem ser replicados para a criação de
-            funções que aparecem com frequência no desenvolvimento de um projeto digital, eles poupam tempo e permitem elevar a produtividade.
-            <ul>
-                <li>Os frameworks di tipo front-end ajudam a programar a parte visível de um site ou aplicativo.</li>
-            </ul>
+            Framework é, de forma básica, um facilitador. Ele traz diversas soluções já pré-definidas, que descomplicam
+            o trabalho dos profissionais no desenvolvimento de aplicativos e outros projetos digitais. Afinal, a atuação
+            de um programador pode ter muito de
+            criatividade, mas também traz aspectos mecânicos, de repetição de tarefas, que seriam maçantes sem a
+            possibilidade de automatização. Como os frameworks representam um conjunto de códigos prontos, que podem ser
+            replicados para a criação de
+            funções que aparecem com frequência no desenvolvimento de um projeto digital, eles poupam tempo e permitem
+            elevar a produtividade.
+        <ul>
+            <li>Os frameworks di tipo front-end ajudam a programar a parte visível de um site ou aplicativo.</li>
+        </ul>
         </p>
-        <a class="btn btn-outline-primary btn-sm" href="https://mundodevops.com/blog/framework-front-end/" role="button">Leia mais</a>
+        <a class="btn btn-outline-primary btn-sm" href="https://mundodevops.com/blog/framework-front-end/" role="button"
+            onclick=" redirecionar() ">Leia mais</a>
 
         <hr class="my-4">
         <h2>Exemplos</h2>
         <h5> <i>Foundation</i> </h5>
         <p>
-            <ul>
-                <li>Framework HTML</li>
-                <li>Solução desenvolvida pela empresa Web Zurb</li>
-                <li>Ideal para sites mais robustos</li>
-                <li>Utilizado por Adobe, Mozilla e Facebook</li>
-                <li>Renderização rápida para mobile.</li>
-            </ul>
+        <ul>
+            <li>Framework HTML</li>
+            <li>Solução desenvolvida pela empresa Web Zurb</li>
+            <li>Ideal para sites mais robustos</li>
+            <li>Utilizado por Adobe, Mozilla e Facebook</li>
+            <li>Renderização rápida para mobile.</li>
+        </ul>
         </p>
-        <a class="btn btn-outline-primary btn-sm" href="https://get.foundation/" role="button">Veja a Documentação</a>
+        <a class="btn btn-outline-primary btn-sm" href="https://get.foundation/" role="button"
+            onclick=" redirecionar() ">Veja a Documentação</a>
 
         <br><br>
         <h5> <i>Bootstrap</i> </h5>
         <p>
-            <ul>
-                <li>Framework CSS, mas inclui vários componentes HTML e JavaScript</li>
-                <li>Criado pelos desenvolvedores do Twitter</li>
-                <li>Ideal para soluções multiplataformas</li>
-                <li>Utilizado por cerca de 7 milhões de sites</li>
-                <li>Atualizado constantemente, tende a contar com os recursos mais recentes.</li>
-            </ul>
+        <ul>
+            <li>Framework CSS, mas inclui vários componentes HTML e JavaScript</li>
+            <li>Criado pelos desenvolvedores do Twitter</li>
+            <li>Ideal para soluções multiplataformas</li>
+            <li>Utilizado por cerca de 7 milhões de sites</li>
+            <li>Atualizado constantemente, tende a contar com os recursos mais recentes.</li>
+        </ul>
         </p>
         <a class="btn btn-outline-primary btn-sm" href="https://getbootstrap.com/" role="button">Veja a Documentação</a>
 
         <br><br>
         <h5> <i>Meteor.js</i> </h5>
         <p>
-            <ul>
-                <li>Framework JavaScript</li>
-                <li>Usado no desenvolvimento de apps em tempo real para empresas como IKEA e Mazda</li>
-                <li>Conta também com diversos recursos para o trabalho back-end</li>
-                <li>Completo, contempla todas as fases de desenvolvimento de softwares</li>
-                <li>Ótimo desempenho, apresentando mudanças no banco de dados em tempo real.</li>
-            </ul>
+        <ul>
+            <li>Framework JavaScript</li>
+            <li>Usado no desenvolvimento de apps em tempo real para empresas como IKEA e Mazda</li>
+            <li>Conta também com diversos recursos para o trabalho back-end</li>
+            <li>Completo, contempla todas as fases de desenvolvimento de softwares</li>
+            <li>Ótimo desempenho, apresentando mudanças no banco de dados em tempo real.</li>
+        </ul>
         </p>
         <a class="btn btn-outline-primary btn-sm" href="https://www.meteor.com/" role="button">Veja a Documentação</a>
 
         <br><br>
         <h5> <i>Materialize</i> </h5>
         <p>
-            <ul>
-                <li>Framework CSS</li>
-                <li>Bem intuitivo, contendo uma série de botões, cards, ícones e formulários prontos para uso</li>
-                <li>Incorpora especificações do Google’s Material Design</li>
-                <li>Também conta com recursos adicionais como sombras, efeitos ondulatórios e menu de arrastar</li>
-                <li>Ideal para páginas mais simples.</li>
-            </ul>
+        <ul>
+            <li>Framework CSS</li>
+            <li>Bem intuitivo, contendo uma série de botões, cards, ícones e formulários prontos para uso</li>
+            <li>Incorpora especificações do Google’s Material Design</li>
+            <li>Também conta com recursos adicionais como sombras, efeitos ondulatórios e menu de arrastar</li>
+            <li>Ideal para páginas mais simples.</li>
+        </ul>
         </p>
         <a class="btn btn-outline-primary btn-sm" href="https://materializecss.com/" role="button">Veja a
             Documentação</a>
@@ -128,13 +139,13 @@
         <br><br>
         <h5> <i>Angular.js</i> </h5>
         <p>
-            <ul>
-                <li>Framework JavaScript</li>
-                <li>Desenvolvido pelo Google</li>
-                <li>Utilizado por empresas como Microsoft e PayPal</li>
-                <li>Conta com uma rápida produção de códigos e uma grande comunidade de desenvolvedores</li>
-                <li>Próprio para a criação de aplicativos web avançados de uma única página.</li>
-            </ul>
+        <ul>
+            <li>Framework JavaScript</li>
+            <li>Desenvolvido pelo Google</li>
+            <li>Utilizado por empresas como Microsoft e PayPal</li>
+            <li>Conta com uma rápida produção de códigos e uma grande comunidade de desenvolvedores</li>
+            <li>Próprio para a criação de aplicativos web avançados de uma única página.</li>
+        </ul>
         </p>
         <a class="btn btn-outline-primary btn-sm" href="https://angularjs.org/" role="button">Veja a Documentação</a>
 
@@ -152,6 +163,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="{% static 'javascript/script.js' %}"></script>
 </body>
 
 </html>
