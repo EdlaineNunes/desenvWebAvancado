@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import * 
 
 # Create your views here.
 
@@ -33,3 +34,11 @@ def frontend(request):
 
 def backend(request):
     return render(request, 'backend.html')
+
+def contact(request):
+    form = ContactForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'contact.html', context)
+
