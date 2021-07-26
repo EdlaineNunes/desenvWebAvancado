@@ -7,4 +7,6 @@ Repositório criado para as aulas da disciplina optativa Desenvolvimento Web Ava
   - CSS;
   - JavaScript;
   - Bootstrap;
-  - Arquitetura MVC (Atividade_01)
+  - Arquitetura MVC (Atividade_01);
+  - Forms (from Django);
+  - Email Service Simulation (from Django);
