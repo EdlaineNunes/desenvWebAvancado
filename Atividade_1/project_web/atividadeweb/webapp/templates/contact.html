@@ -1,36 +1,97 @@
+{% load static %}
 {% load bootstrap4 %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    {% bootstrap_css %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title> FALE CONOSCO </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
-    <h1>contato</h1>
-    <div class="container">
-        <h1>Contato</h1>
-        {% bootstrap_messages %}
-        <!-- Caso a mensagem não seja enviada por algum motivo, deixar uma mensagem -->
-        <form action="{% url 'contact' %}" method="post" class="form" autocomplete="off">
-            {% csrf_token %}
-            <!-- Recurso de segurança do Django. Gera um token diferente para cada formulário e verifica se ninguém o alterou no meio do caminho -->
-            {% bootstrap_form form %}
-            <!-- O bootstrap será aplicado em nosso form -->
-            {% buttons %}
-            <!-- Cria um botão -->
-            <button type="submit" class="btn btn-primary"> Enviar Mensagem</button>
-            {% endbuttons %}
-        </form>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand"
+            href="https://www.ifnmg.edu.br/cursos-janu1/cursos-superiores/429-portal/januaria/januaria-cursos-superiores/bacharelado-em-sistemas-de-informacao/17728-bacharelado-em-sistemas-de-informacao"
+            onclick=" redirecionar() ">BSI - IFNMG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" onclick=" location.href='/home/'">HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick=" location.href='/w3c/'">W3C</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Desenvolvimento Web
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick=" location.href='/html/'">HTML</a>
+                        <a class="dropdown-item" onclick=" location.href='/css/'">CSS</a>
+                        <a class="dropdown-item" onclick=" location.href='/javascript/'">Javascript</a>
+                        <a class="dropdown-item" onclick=" location.href='/frontend/'">Frameworks Frontend</a>
+                        <a class="dropdown-item" onclick=" location.href='/backend/'">Frameworks Backend</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" onclick=" location.href='/contact/'">FALE CONOSCO <span class="sr-only">(página
+                            atual)</span></a>
+                </li>
+
+            </ul>
+            <button type="button" class="btn btn-outline-dark"> <a onclick=" redirecionar() "
+                    href="https://getbootstrap.com/docs/5.0/getting-started/download/"
+                    style="text-decoration: none;">Baixar o Bootstrap</a> </button>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Sistemas de Informação" class="img-center">
+        </div>
+        <div class="container">
+            <h2 style="text-align: center;">Fale Conosco</h2>
+            <div>
+                <p>É importante que qualquer dúvida, sugestão, reclamação e/ou outros assuntos a serem tratados com a equipe
+                    desenvolvedora, possa ser sanada a partir deste contato inicial. Retornaremos o contato com a resposta,
+                    assim que a obtiver-mos. Desde já, agradecemos o seu contato.</p>
+                <br>
+            </div>
+            {% bootstrap_messages %}
+            <form action="{% url 'contact' %}" method="post" class="form" autocomplete="off">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% buttons %}
+                <button type="submit" class="btn btn-primary"> Enviar Mensagem</button>
+                {% endbuttons %}
+            </form>
+        </div>
+
+        {% bootstrap_javascript jquery='full' %}
     </div>
 
 
-    <!-- demais partes do body -->
-    {% bootstrap_javascript jquery='full' %}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="{% static 'javascript/script.js' %}"></script>
 </body>
 
 </html>
