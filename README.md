@@ -3,6 +3,7 @@ Repositório criado para as aulas da disciplina optativa Desenvolvimento Web Ava
 
 
 ##### Recursos utilizados:
+  - venv;
   - HTML;
   - CSS;
   - JavaScript;
